@@ -11,7 +11,7 @@
 
 .container {
     width: 90%;
-
+    border: 1px solid black;
 }
 
 #echoPhrase {
@@ -21,4 +21,8 @@
 
 #echoButton, #response {
     margin-bottom: .5em;
+}
+
+.grandCanyon {
+    background: image("/img/img_487_2.jpg");
 }
