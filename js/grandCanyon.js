@@ -10,7 +10,7 @@ function echo() {
     for (var i = 1; i <= numberOfEchoes; i++){
         var phrase = document.getElementById("echoPhrase").value;
         var newPhrase = phrase + "<br />";
-        if (phrase === ""){
+        if (phrase === " "){
             $("#response").html("I'm going to need you to say something for this to work");
         } else if (phrase.toLowerCase() === "i'm an idiot" || phrase.toLowerCase() === "i am an idiot"){
             newPhrase = "YOU'RE AN IDIOT! <br />";

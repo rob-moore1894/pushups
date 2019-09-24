@@ -14,7 +14,7 @@
 
     <!--Grand Canyon Echo Exercise-->
     <div class="container grandCanyon">
-        <p id="description">
+        <p class="description">
             We are at the Grand Canyon. Everyone shouts random things into the canyon to hear their echos.
             Make a function that will echo your phrase a random number of times. (max number of echos is 8)
         </p>
@@ -27,10 +27,55 @@
         <div id="sayAgain"></div>
     </div>
 
+    <!--Magic Trick-->
+    <div class="container magicTrick">
+        <p class="description">
+            You have a friend who is learning magic; the first trick is attempting to guess your card.
+        </p>
+        <div class="cardDeck d-flex justify-content-between">
+            <div id="cardPick">
+                Pick a Card
+                <br />
+                <select name="cardNumber" id="cardNumber">
+                    <option value="ace">Ace</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five</option>
+                    <option value="6">Six</option>
+                    <option value="7">Seven</option>
+                    <option value="8">Eight</option>
+                    <option value="9">Nine</option>
+                    <option value="J">Jack</option>
+                    <option value="Q">Queen</option>
+                    <option value="K">King</option>
+                </select>
+                <select name="cardSuit" id="cardSuit">
+                    <option value="clubs">Clubs</option>
+                    <option value="spades">Spades</option>
+                    <option value="diamonds">Diamonds</option>
+                    <option value="hearts">Hearts</option>
+                </select>
+                <br />
+                <button id="cardSelect" onclick="cardSelect()">Pick the Card</button>
+            </div>
+            <div id="isThisYourCard">
+                <button id="magicianSelect" onclick="magicianSelect()">Is this your card?</button>
+                <div id="magicianChoice"></div>
+                <div id="verifyCard">
+                    <button id="yes" onclick="yesCard()">Yes!</button>
+                    <button id="no" onclick="noCard()">No!</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardResult"></div>
+    </div>
+
 
 
 <!--scripts-->
     <script src="js/grandCanyon.js"></script>
+    <script src="js/magicCard.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

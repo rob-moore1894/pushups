@@ -12,6 +12,9 @@
 .container {
     width: 90%;
     border: 1px solid black;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 1em;
 }
 
 #echoPhrase {
@@ -26,3 +29,24 @@
 .grandCanyon {
     background: image("/img/img_487_2.jpg");
 }
+
+#cardSelect {
+    margin-top: .5em;
+}
+
+#cardPick, #isThisYourCard {
+    border: 1px solid black;
+    padding: .5em;
+    width: 45%;
+    text-align: center;
+}
+
+#magicianChoice, #verifyCard {
+    margin: .5em auto;
+}
+
+.cardResult {
+    text-align: center;
+    margin: .5em auto;
+}
+
